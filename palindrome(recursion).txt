@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+bool palindrome(string str, int l, int h){
+       if (l == h){
+          return true;
+       }
+       else if (str[l] != str[h]){
+           return false;
+       }
+
+    return palindrome(str, l + 1, h - 1);
+}
+int main(){
+      string str;
+      cout<<"Enter your string: ";
+      cin>>str;
+      int length = str.length();
+      if (palindrome(str, 0, length - 1)){
+      cout << "Palindrome";
+      }
+      else{
+      cout << "Not Palindrome";
+      }
+ return 0;
+}

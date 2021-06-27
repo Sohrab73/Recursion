@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int dectobin(int n, int& din) {
+	if (n == 0) { return n; }
+
+	dectobin(n / 2, din);
+	din = (din * 10) + n % 2;
+
+}
+int main() {
+	int a = 0;
+	cout << "Enter a decimal number:";
+	cin >> a;
+	int x = 0;
+	dectobin(a, x);
+	cout << "Binary number:" << x << endl;
+	return 0;
+}

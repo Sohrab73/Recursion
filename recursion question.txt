@@ -1,0 +1,38 @@
+1. Write a program that will take the number from the user and check if the number is prime or not. (using recursion)
+
+2. Write a program that will take the number from the user and find the factorial of that number. (using recursion)
+
+3. Write a program that will take a decimal number from the user and convert it to a binary number. (using recursion)
+
+4. Write a program that will take the two Fibonacci numbers and one desired Fibonacci number from the user. 
+Then Calculate the position of the desired Fibonacci number. (using recursion)
+Example: Enter the first Fibonacci number: 2
+Enter the second Fibonacci number: 5
+Enter the position of the desired Fibonacci number: 6
+The Fibonacci number at position 6 is: 31
+
+
+5. Write a program that will take the two positive numbers and calculate the power using recursion.
+Example: Enter base number: 5
+Enter power number(positive integer): 2
+Result: 5^2 = 25.
+
+6. Write a program that will take the two positive numbers and calculate G.C.D using recursion.
+
+7. Write a recursive function named isPalindrome that accepts a string parameter and returns true if the string is the same 
+forwards as backwards, ignoring capitalization. For example, the call of isPalindrome("Madam") should return true.
+Constraints: Do not declare any global variables or any auxiliary data structures. Do not use any loops; you must use recursion.
+
+8. Write a recursive function named evenDigits that accepts an integer parameter n and returns a new integer containing 
+only the even digits from n, in the same order. If n does not contain any even digits, return 0.
+For example, the call of evenDigits(8342116) should return 8426 and the call of evenDigits(35179) should return 0.
+
+9. Write a program that will take the number from the user and find the sum of natural numbers. (using recursion)
+Example: Enter a positive integer: 20
+Sum = 210
+
+
+Instructions:
+1. Plagiarism will not be tolerated.
+2. Do not copy from any online source or from a person.
+3. Submit a zip file containing all programs (provide individual file for each program - e.g- 01_1711135_203.cpp)

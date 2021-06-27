@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int fibo(int n,int a,int b){
+    if(n==0){
+       return a;
+   }
+   else if(n==1){
+     return b;
+   }
+  return fibo(n-1,a,b)+fibo(n-2,a,b);
+}
+
+int main(){
+         int n,a,b;
+         cout<<"Enter the first fibonacci number:";
+         cin>>a;
+         cout<<"Enter the second fibonacci number:";
+         cin>>b;
+         cout<<"Enter the position of the desired Fibonacci number:";
+         cin>>n;
+         cout<<fibo(n-1,a,b)<<endl;
+   return 0;
+}

@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int bin(int n,int arr[],int low,int high) {
+
+	if (low>high) { return false; }
+	
+	int mid = (low + high) / 2;
+	if (n == arr[mid]) { return mid; }
+
+	if (n > arr[mid]) {
+		return bin(n, arr, mid + 1, high);
+	}
+	else {
+		return bin(n, arr, 0, mid - 1);
+	}
+	
+}
+int main() {
+	int arr[] = { 2, 3, 4, 10, 40 };
+	int x = 10;
+	int n = sizeof(arr) / sizeof(arr[0]);
+	int result = bin(x, arr, 0, n - 1);
+	if(result == -1) {
+		cout << "Element is not present in array";
+	}
+	else {
+		cout << "Element is present at index " << result;
+	}
+	return 0;
+}

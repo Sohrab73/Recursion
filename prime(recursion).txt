@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int prime(int x, int y){
+    if(y == 1){
+        return 1;
+    }
+    else{
+        if(x%y == 0){
+            return 0;
+        }
+        else{
+            prime(x, y-1);
+        }    
+    }
+}
+int main(){
+    int number,checknumber;
+    cout<<"Enter a number: ";
+    cin>>number;
+    checknumber = prime(number, number/2);
+    if(checknumber == 1){
+        cout<<number<<" is a prime number"<<endl;
+    }
+    else{
+        cout<<number<<" is not a prime number"<<endl;
+    }
+    return 0;
+}

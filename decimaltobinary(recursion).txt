@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int dectobin(int n) {
+	if (n == 0) { return n; }
+	int x = n % 2;
+	int y = n / 2;
+
+	return x + (10 * dectobin(y));
+}
+int main() {
+	int a = 0;
+	cout << "Enter a decimal number:";
+	cin >> a;
+	cout << dectobin(a) << endl;
+
+	return 0;
+}

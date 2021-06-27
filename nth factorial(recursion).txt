@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int factorial(int num){
+  if(num>1){
+            return  num*factorial(num-1);
+            }
+  else{
+      return num;
+      }
+}
+
+int main(){
+     int number;
+     cout<<"Enter a number: ";
+     cin>>number;
+     cout<<factorial(number)<<endl;
+ 
+    return 0;
+}
